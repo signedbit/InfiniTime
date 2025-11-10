@@ -14,7 +14,7 @@ namespace Pinetime::Applications {
   namespace Screens {
     class Timer : public Screen {
     public:
-      Timer(Controllers::Timer& timerController);
+      Timer(Controllers::Timer& timerController, uint16_t start_seconds);
       ~Timer() override;
       void Refresh() override;
       void Reset();
@@ -54,7 +54,7 @@ namespace Pinetime::Applications {
     static constexpr const char* icon = Screens::Symbols::hourGlass;
 
     static Screens::Screen* Create(AppControllers& controllers) {
-      return new Screens::Timer(controllers.timer);
+      return new Screens::Timer(controllers.timer, 0);
     };
   };
 }

@@ -17,7 +17,7 @@ static void btnEventHandler(lv_obj_t* obj, lv_event_t event) {
   }
 }
 
-Timer::Timer(Controllers::Timer& timerController) : timer {timerController} {
+Timer::Timer(Controllers::Timer& timerController, uint16_t start_seconds) : timer {timerController} {
 
   lv_obj_t* colonLabel = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_set_style_local_text_font(colonLabel, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, &jetbrains_mono_76);
@@ -66,6 +66,11 @@ Timer::Timer(Controllers::Timer& timerController) : timer {timerController} {
     SetTimerRunning();
   } else {
     SetTimerStopped();
+
+    if (start_seconds != 0) {
+      minuteCounter.SetValue(start_seconds / 60);
+      secondCounter.SetValue(start_seconds % 60);
+    }
   }
 
   taskRefresh = lv_task_create(RefreshTaskCallback, LV_DISP_DEF_REFR_PERIOD, LV_TASK_PRIO_MID, this);
