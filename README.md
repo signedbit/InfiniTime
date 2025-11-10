@@ -12,13 +12,17 @@
 [![Stars - InfiniTime](https://img.shields.io/github/stars/InfiniTimeOrg/InfiniTime?style=social)](https://github.com/InfiniTimeOrg/InfiniTime/stargazers)
 [![Forks - InfiniTime](https://img.shields.io/github/forks/InfiniTimeOrg/InfiniTime?style=social)](https://github.com/InfiniTimeOrg/InfiniTime/network/members)
 
-# InfiniTime
+# InfiniTime (+ Custom Timers)
 
 *Fast open-source firmware for the [PineTime smartwatch](https://pine64.org/devices/pinetime/) with many features, written in modern C++.*
 
 <br>
 
 </div>
+
+## Custom Timers
+
+This fork adds 3 custom timers with 35s, 90s, and 120s durations. Branches `1.13.0-timers` and `1.15.0-timers` are based on the respective release tags.
 
 ## New to InfiniTime?
 
