@@ -613,6 +613,7 @@ set(INCLUDE_FILES
         displayapp/screens/Timer.h
         displayapp/screens/Timer35.h
         displayapp/screens/Timer90.h
+        displayapp/screens/Timer120.h
         displayapp/screens/Dice.h
         displayapp/screens/Alarm.h
         displayapp/Colors.h

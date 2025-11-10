@@ -5,6 +5,7 @@
 #include "displayapp/screens/Timer.h"
 #include "displayapp/screens/Timer35.h"
 #include "displayapp/screens/Timer90.h"
+#include "displayapp/screens/Timer120.h"
 #include "displayapp/screens/Alarm.h"
 #include "components/battery/BatteryController.h"
 #include "components/ble/BleController.h"
