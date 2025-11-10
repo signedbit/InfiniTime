@@ -14,6 +14,7 @@ namespace Pinetime {
       Timer,
       Timer35,
       Timer90,
+      Timer120,
       Alarm,
       FlashLight,
       BatteryInfo,
